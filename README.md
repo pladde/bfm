@@ -35,4 +35,30 @@ We're excited to bring these features to BFM in future updates:
 * **Music Playback Integration:** The heart of BFM – enabling the actual playback of custom or predefined music during boss fights.
 * **In-Game Configuration:** User-friendly options to customize music preferences, including specific tracks for different bosses, volume control, and more.
 * **Advanced Boss Detection:** Refining detection logic with specific boss unit IDs, instance-based triggers, and other criteria for even greater accuracy.
-*
+* **Bug Fixes & Optimizations:** Squashing any bugs and improving performance for a smoother experience.
+
+---
+
+## 📦 Installation (For Testers & Developers)
+
+Since BFM is in active development, manual installation is required:
+
+1.  **Download:** Grab the entire repository by downloading the ZIP file or cloning it via Git.
+2.  **Extract:** Unzip the downloaded file. You'll find a folder (likely named `BossFightMusic`) containing `BossFightMusic.toc` and `Main.lua`.
+3.  **Place:** Move this `BossFightMusic` folder directly into your **World of Warcraft Vanilla** `Interface/AddOns/` directory.
+    * *Example Path (may vary slightly for your specific Vanilla client like Turtle WoW):*
+        `C:\Program Files (x86)\World of Warcraft\Interface\AddOns\BossFightMusic\`
+4.  **Launch:** Start your Vanilla World of Warcraft client.
+5.  **Enable AddOn:** On the character selection screen, click the "AddOns" button (bottom-left). Ensure "Boss Fight Music" is listed and **enabled**.
+6.  **Test:** Log into a character and keep an eye on your chat window for the debugging messages!
+
+---
+
+## 🤝 Contributing
+
+We welcome your help! If you encounter bugs, have feature ideas, or want to contribute code, please feel free to:
+
+* Open an [issue](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/issues) for bug reports or feature requests.
+* Submit a [pull request](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/pulls) with your code contributions.
+
+---
