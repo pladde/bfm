@@ -1,0 +1,6 @@
+## Interface: 1.17.1
+## Title: Boss-Fight Music
+## Notes: This addon plays selected music from the beginning to the end of a boss fight.
+## Author: Plattenpapzt
+
+bfm.lua
