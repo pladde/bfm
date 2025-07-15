@@ -22,6 +22,41 @@ frame:SetScript("OnEvent",function(self, event, ...)
     end
 end)
 
+-- plays music if the player turn into a bossfight
+frame:SetScript("OnEvent", function(self, event, ...)
+    if event == "UNIT_COMBAT" then
+        local unitID = select(1, ...)
+
+        if not unitID or not UnitExists(unitID) then
+            return;
+        end
+
+        if unitID == "player" and UnitInCombat("player") then
+
+            local targetUnit = "target";
+            if UnitExists(targetUnit) and UnitInCombat(targetUnit) then
+                local targetClassification = UnitClassification(targetUnit);
+                local targetLevel = UnitLevel(targetUnit);
+                -- local targetName = UnitName(targetUnit);
+
+                local isBoss = (
+                        targetClassification == "worldboss" or
+                        targetClassification == "boss" or
+                        targetLevel == -1
+                );
+
+                if isBoss then
+                    DEFAULT_CHAT_FRAME:AddMessage("Entering in combat against a boss")
+                end
+            end
+
+        elseif unitID == "player" and not UnitInCombat("player") then
+            DEFAULT_CHAT_FRAME:AddMessage("leave bossfight")
+        end
+    end
+
+end);
+
 -- JUST FOR TESTING: fired a chat message if the player turns into combat
 frame:SetScript("OnEvent", function(self, event, ...)
     if event == "UNIT_COMBAT" then
