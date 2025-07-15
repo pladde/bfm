@@ -61,10 +61,16 @@ end);
 frame:SetScript("OnEvent", function(self, event, ...)
     if event == "UNIT_COMBAT" then
         local unitID = select(1, ...)
-        if unitID == "player" then
-            if UnitInCombat("player") then
-                DEFAULT_CHAT_FRAME:AddMessage("DEBUG: entering combat");
-            end
+
+        if not unitID or not UnitExists(unitID) then
+            return;
+        end
+
+        if unitID == "player" and UnitInCombat("player") then
+            DEFAULT_CHAT_FRAME:AddMessage("DEBUG: join fight");
+
+        elseif unitID == "player" and not UnitInCombat("player") then
+            DEFAULT_CHAT_FRAME:AddMessage("DEBUG: leave fight")
         end
     end
 end)
