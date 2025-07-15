@@ -1,17 +1,14 @@
-Absolut! Um die Schriftgrößen und Hierarchie zu betonen, verwenden wir in Markdown die verschiedenen Überschriftsebenen (#, ##, ###) und ein paar einfache Tricks, um Text hervorzuheben (fett, kursiv).
 
-Hier ist der Readme-Entwurf mit den entsprechenden Markdown-Elementen für die gewünschte visuelle Struktur:
-
-🎶 Boss Fight Music (BFM) - Work In Progress
-📜 Project Overview
+#🎶 Boss Fight Music (BFM) - Work In Progress
+##📜 Project Overview
 Boss Fight Music (BFM) is a Vanilla World of Warcraft AddOn designed to elevate your gameplay by playing dynamic, customized music during boss encounters. Built with the Turtle WoW API, BFM aims to seamlessly detect the start and end of boss fights, transitioning your in-game audio to a thrilling combat soundtrack.
 
 Please note: This AddOn is currently in active development. While core detection is in place, music playback and full functionality are planned for future updates.
 
-✨ Current Features (Development Version)
+##✨ Current Features (Development Version)
 This current development build focuses on robust boss detection and debugging within the Vanilla WoW environment.
 
-➕ Implemented Functionality:
+##➕ Implemented Functionality:
 AddOn Load Confirmation:
 
 A chat message ("bfm successfully loaded") confirms when the AddOn has loaded.
